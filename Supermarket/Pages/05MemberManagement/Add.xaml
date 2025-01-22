@@ -1,0 +1,60 @@
+﻿<DMSkin:DMSkinWindow
+    x:Class="Supermarket.Pages.MemberManagement.Add"
+    xmlns:DMSkin="clr-namespace:DMSkin.WPF.Small;assembly=DMSkin.WPF.Small"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+    xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+    xmlns:local="clr-namespace:Supermarket.Pages"
+    xmlns:lvc="clr-namespace:LiveCharts.Wpf;assembly=LiveCharts.Wpf"
+    mc:Ignorable="d"
+    Foreground="White"
+    Background="White"
+    DMShowMin="False"
+    DMShowMax="False"
+    DMShowClose="False"
+    DMWindowShadowSize="10"
+    DMSystemButtonSize="20"
+    DMSystemButtonForeground="#FF666666"
+    DMSystemButtonHoverColor="#33000000"
+    DMWindowShadowColor="#FFC8C8C8" 
+    DMSystemButtonShadowEffect="0"
+    ResizeMode="CanResizeWithGrip"
+    Title="用户管理-注册" Height="350" Width="658.04" 
+	WindowStartupLocation="CenterScreen"
+    MinHeight="280" MinWidth="360"
+    TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+    TextElement.FontWeight="Medium"
+    TextElement.FontSize="18"
+    
+    >
+    <Grid Background="White">
+        <Grid>
+            <Label Content="会员卡号：" HorizontalAlignment="Left" Margin="53,31,-51,0" VerticalAlignment="Top" FontSize="18"/>
+            <TextBox x:Name="txt_memberID" HorizontalAlignment="Left" Height="30" Margin="158,32,-218,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="160" Text="" FontSize="18"/>
+            <Label Content="会员姓名：" HorizontalAlignment="Left" Margin="53,79,-51,-9.86" VerticalAlignment="Top" FontSize="18"/>
+            <TextBox x:Name="txt_memberName" HorizontalAlignment="Left" Height="30" Margin="158,80,-218,-10" TextWrapping="Wrap" VerticalAlignment="Top" Width="160" Text="" FontSize="18"/>
+            <Label Content="会员密码：" HorizontalAlignment="Left" Margin="53,127,-51,-57.86" VerticalAlignment="Top" RenderTransformOrigin="0.302,0.281" FontSize="18"/>
+            <PasswordBox x:Name="psw_memberPassword" HorizontalAlignment="Left" Margin="158,130,-218,-60" VerticalAlignment="Top" Width="160" Height="30" Password="" FontSize="18"/>
+            <Label Content="确认密码 ：" HorizontalAlignment="Left" Margin="53,178,-56.327,-108.86" VerticalAlignment="Top" RenderTransformOrigin="0.302,0.281" FontSize="18"/>
+            <PasswordBox x:Name="psw_confirmPassword" HorizontalAlignment="Left" Margin="158,181,-218,-111" VerticalAlignment="Top" Width="160" Height="30" Password="" FontSize="18"/>
+            <Label Content="充值金额：" HorizontalAlignment="Left" Margin="344,31,-342,0" VerticalAlignment="Top" FontSize="18"/>
+            <TextBox x:Name="txt_memberMoney" HorizontalAlignment="Left" Height="30" Margin="449,32,-509,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="160" Text="" FontSize="18"/>
+            <Label Content="手机号码：" HorizontalAlignment="Left" Margin="344,80,-342,-10.86" VerticalAlignment="Top" FontSize="18"/>
+            <TextBox x:Name="txt_telephone" HorizontalAlignment="Left" Height="30" Margin="449,81,-509,-11" TextWrapping="Wrap" VerticalAlignment="Top" Width="160" Text="" FontSize="18"/>
+            <Label Content="会员折扣：" HorizontalAlignment="Left" Margin="344,128,-342,-58.86" VerticalAlignment="Top" FontSize="18"/>
+            <TextBox x:Name="txt_memberDiscount" HorizontalAlignment="Left" Height="30" Margin="449,129,-509,-59" TextWrapping="Wrap" VerticalAlignment="Top" Width="160" Text="" FontSize="18"/>
+            <Label Content="会员说明：" HorizontalAlignment="Left" Margin="344,178,-342,-108.86" VerticalAlignment="Top" FontSize="18"/>
+            <TextBox x:Name="txt_statement" HorizontalAlignment="Left" Height="30" Margin="449,179,-509,-109" TextWrapping="Wrap" VerticalAlignment="Top" Width="160" Text="" FontSize="18"/>
+        </Grid>
+        <Grid Margin="150,0,150,16" VerticalAlignment="Bottom">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+            </Grid.ColumnDefinitions>
+            <Button x:Name="btn_Certain" Content="确定" Width="100" Click="btn_Certain_Click" Height="32" Margin="0"/>
+            <Button x:Name="btn_Cancel" Content="取消" Click="btn_Cancel_Click" Height="32" Width="100" Margin="0" Grid.Column="1"/>
+        </Grid>
+    </Grid>
+</DMSkin:DMSkinWindow>
